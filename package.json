@@ -1,0 +1,23 @@
+{
+  "name": "alias-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/backend",
+    "packages/frontend"
+  ],
+  "scripts": {
+    "build": "cd packages/frontend && npm run build && cd ../backend && npm run tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinfacc/alias-generator.git"
+  },
+  "author": "Martin Facciuto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinfacc/alias-generator/issues"
+  },
+  "homepage": "https://github.com/martinfacc/alias-generator#readme"
+}
