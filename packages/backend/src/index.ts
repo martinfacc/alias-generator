@@ -5,7 +5,7 @@ import logger from './logger'
 dotenv.config()
 
 const { APP_PORT = '4000' } = process.env
-const FRONT_PATH = '../../frontend/dist'
+const FRONT_PATH = '../../../packages/frontend/dist'
 
 const app = express()
 
