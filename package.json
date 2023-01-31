@@ -1,14 +1,30 @@
 {
   "name": "alias-generator",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "workspaces": [
-    "packages/backend",
-    "packages/frontend"
-  ],
+  "type": "module",
   "scripts": {
-    "build": "cd packages/frontend && npm run build && cd ../backend && npm run tsc"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "4.5.9",
+    "js-confetti": "0.11.0",
+    "lodash": "4.17.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "5.3.6",
+    "sweetalert2": "11.7.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.191",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "@types/styled-components": "5.1.26",
+    "@vitejs/plugin-react": "3.0.0",
+    "typescript": "4.9.3",
+    "vite": "4.0.0"
   },
   "repository": {
     "type": "git",
