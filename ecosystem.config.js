@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   apps: [
     {
       name: "alias-generator", // Un nombre para tu aplicación
